@@ -1,11 +1,8 @@
-# ✨ PPLOG 
+😺 PPLOG<sup>●</sup> Frontend
 
-## 프로젝트 소개
-- AI 모델을 이용한 클라우드 네이티브 기반 취업 지원 블로그 서비스
+팀 MYAONG의 프로젝트 **PPLOG** 프론트엔드 리포지토리입니다.
 
-
-#### 개발 기간
-- 2024.09.01.~2024.12.31
+서비스 소개 및 공통 문서는 [organization 페이지](https://github.com/orgs/KEA-5th-Myaong)에서 확인하실 수 있습니다.
 
 ## 🧑‍💻 개발자 소개
 |<img src="https://github.com/user-attachments/assets/53d3f3d5-6cef-400b-9be1-61bb78631321" width="150px" height="200px" />|<img src="https://github.com/user-attachments/assets/b2d1e09f-bb82-48ee-b3db-c5c6f192bf7b" width="150px" height="200px" />|<img src="https://github.com/user-attachments/assets/33a21583-674d-441d-9a91-808705b3792e" width="150px" height="200px" />|
@@ -19,11 +16,16 @@
 - 로그인, 회원가입, 블로그 페이지, 모의 면접, 자기소개서 목록, 마이페이지, 메인 페이지, 관리자 메인/상세 페이지, 약관동의 페이지
 
 ### 곽서연
-- 랜딩 페이지, 포트폴리오 목록/작성/조회
+- 디자인, 랜딩 페이지, 포트폴리오 목록/작성/조회
 
 ### 백지연
 - 자기소개서 작성/수정/상세보기, 헤더, 문의 공지 페이지, 관리자 기업 관리 페이지, 다크모드, 포스트 작성
 
+## 🤖 개발 환경 설정
+
+### ⚙️ Node 버전과 패키지 매니저
+- Node.js: v14.6.0 이상
+- 패키지 매니저: npm
 
 ## 🛠️ 기술 스택
 
@@ -36,27 +38,23 @@
 
 #### 라이브러리
 
-- tanstack-query
-- toast-ui/editor
-- dompurify
-- html-react-parser
-- js-cookie
-- react-hook-form
-- react-intersection-observer
-- react-slick(slick-carousel)
-- react-to-pdf
-- sharp
-- uuid
-- zustand
+- **TanStack Query** (강력한 서버 상태 관리 및 데이터 동기화)
+- **toast-ui/editor** (마크다운 에디터 컴포넌트)
+- **dompurify** (XSS 공격 방지를 위한 HTML 정제)
+- **react-hook-form** (폼 유효성 검사)
+- **react-intersection-observer** (요소의 뷰포트 가시성 감지)
+- **react-slick(slick-carousel)** (캐러셀 구현)
+- **react-to-pdf** (PDF 다운로드 지원)
+- **zustand** (로컬 상태 관리)
 
 #### 데이터 프로세싱
-- axios
 
-#### UI
+- **axios** (HTTP 요청을 위한 Promise 기반 클라이언트)
 
-<img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"> 
+#### 스타일링 및 애니메이션
 
-- framer-motion
+- **Tailwind CSS** (유틸리티 기반 CSS 프레임워크)
+- **framer-motion** (React 애플리케이션에 선언적 애니메이션을 추가하는 라이브러리)
 
 
 #### 코드 포매터 및 검사 도구
@@ -67,24 +65,37 @@
 
 <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white"> <img src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white">
 
-#### 배포
+## ✏️ Convention
 
-<img src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white">
+### Git Convention
 
+- Git Flow 사용
+- 개발 절차
+    1. Jira에서 issue 생성 후 branch 생성
+    2. add → commit → push → pull request
+    3. code review
+    4. pull request를 main branch로 merge
+    6. 종료된 branch delete
+- Branch : `#<Jira_label_Number>-<description>`
+- Commit Message : `:gitmoji<prefix>: <title> \n <Description> \n [#<Issue_Number>]`
 
-## 💻 주요 기능
-1. **개인 포트폴리오 블로그**
-   - 내용
+- Gitmoji
+    
+    | prefix | gitmoji | 의미 |
+    | --- | --- | --- |
+    | feat | `:sparkles:` (✨) | 새로운 기능 추가 |
+    | feat | `:tada:` (🎉) | 새로운 기능 세팅 |
+    | fix | `:bug:` (🐛) | 버그 수정 |
+    | docs | `:memo:` (📝) | 문서 수정 |
+    | style | `:lipstick:` (💄) | UI/UX 개선 작업 |
+    | refactor | `:recycle:` (♻️) | 코드 리팩토링 |
+    | test | `:test_tube:` (🧪) | 테스트 추가 또는 수정 |
+    | chore | `:wrench:` (🛠) | 빌드 프로세스 또는 보조 도구 수정 |
 
-2. **AI 모의면접**
-   - 내용
+### Code
 
-3. **AI 자소서 첨삭 및 자소서 관리**
-   - 내용
+**Naming**
 
-4. **포트폴리오 관리 및 작성**
-   - 내용
-     
-
-## 시연영상
-
+1. camelCase를 사용합니다.
+2. 상수의 경우 snake_case를 사용합니다.
+3. 아이콘은 ic-파일명.ts으로 public 폴더에 하나의 파일에서 관리합니다.
